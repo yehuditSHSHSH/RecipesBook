@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="../css/recipesBook.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+    <link rel="stylesheet" href="../css/addRecipe.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>הוספת מתכון חדש</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../שחור.png" alt="לוגו האתר">
+        </div>
+        <div id="search-container">
+            <input type="text" placeholder="חפש מתכון/יוצר" id="search-input">
+            <button id="search-button"><i class='fas fa-search'></i></button>
+        </div>
+        <nav>
+            <ul>
+                <h2 id="wellcome"></h2><br>
+                <li><a href="#"onclick="logout()">התנתקות</a></li>
+                <li><a href="./homePage.html" >דף ראשי</a></li>
+                <li><a href="./recipesBook.html" style="color: rgb(241, 71, 139);">מחברת מתכונים</a></li>
+                <li><a href="./setProfile.html">עריכת פרופיל</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="addRecipeForm">
+            <h2>הוסף מתכון חדש</h2>
+            <form id="recipeForm">
+                <label for="name">שם המתכון:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="category">קטגוריה:</label>
+                <select id="category" name="category" required>
+                    <option value="לחמים">לחמים</option>
+                    <option value="סלטים">סלטים</option>
+                    <option value="מנות עקריות">מנות עקריות</option>
+                    <option value="תוספות">תוספות</option>
+                    <option value="עוגות ועוגיות">עוגות ועוגיות</option>
+                    <option value="קינוחים ומתוקים">קינוחים ומתוקים</option>
+                </select>
+
+                <h2>רכיבים:</h2>
+                <div id="ingredientsList">
+                    <!-- כאן יתווספו הרכיבים דינמית באמצעות JavaScript -->
+                </div>
+                <button type="button" id="addIngredientButton">הוסף רכיב</button>
+
+
+                <label for="preparationInstructions">הוראות הכנה:</label>
+                <textarea id="preparationInstructions" name="preparationInstructions" rows="6" required></textarea>
+
+                <label for="quantityOfProduce">כמות לייצור:</label>
+                <input type="number" id="quantityOfProduce" name="quantityOfProduce" required>
+
+                <label for="durationOfPreparation">זמן הכנה בדקות:</label>
+                <input type="number" id="durationOfPreparation" name="durationOfPreparation" required>
+
+                <label for="levelOfDifficulty">רמת קושי:</label>
+                <select id="levelOfDifficulty" name="levelOfDifficulty" required>
+                    <option value="קל">קל</option>
+                    <option value="בינוני">בינוני</option>
+                    <option value="קשה">קשה</option>
+                </select>
+
+                <label for="description">תיאור:</label>
+                <textarea id="description" name="description" rows="6" required></textarea>
+
+                <label for="image">תמונה:</label>
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="file" id="image-input" accept="image/*"  placeholder="לשינוי תמונה- לחץ" required>
+                </form>
+                
+                <img id="image-display" src="" alt="תצוגת תמונה">
+
+                <button type="submit" id="submit" onclick="updateRecipe()">עדכן מתכון</button>
+            </form>
+        </div>
+    </main>
+    <script src="../javaScript/addIngredients.js"></script>
+    <script src="../javaScript/updateRecipe.js"></script>
+    <script src="../javaScript/search.js"></script>
+    <script src="../javaScript/showRecipes.js"></script>
+</body>
+

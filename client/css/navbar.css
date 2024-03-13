@@ -1,0 +1,193 @@
+/* Reset סגנון ברירת מחדל */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* סגנון של הכותרת הראשית */
+header {
+    background-color: black;
+    /* רקע עבור הכותרת */
+    color: #fff;
+    /* צבע טקסט */
+    padding: 10px 0;
+    /* מרווח מסביב לכותרת */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: ltr;
+}
+
+/* סגנון ללוגו */
+.logo {
+    margin-left: 20px;
+}
+
+/* סגנון לחלונית החיפוש */
+#search-container {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#search-container input[type="text"] {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-container button {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* סגנון לאייקון של חיפוש */
+#search-container button i {
+    font-size: 16px;
+    color: white;
+}
+
+/* סגנון של סרגל הניווט */
+nav ul {
+    list-style: none;
+    /* הסתרת נקודות רשימה */
+    text-align: right;
+    /* מיון הטקסט לימין */
+}
+
+nav li {
+    display: inline;
+    /* תצוגת הפריטים בקו אחד */
+    margin-left: 20px;
+    /* מרווח בין הפריטים */
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    /* הסתרת קווים תחתונים מהקישורים */
+    color: #fff;
+    /* צבע הקישורים */
+    font-weight: bold;
+    /* עיצוב טקסט מודגש */
+}
+
+/* סגנון של הרקע של דף הבית */
+main {
+    background-color: #f4f4f4;
+    /* רקע אפור בהיר */
+    padding: 20px;
+    /* מרווח מסביב לתוכן */
+}
+
+/* סגנון של הכותרת בדף הבית */
+h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* סגנון של הטקסט בדף הבית */
+p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+}
+
+/* סגנון של הכותרת בפוטר */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* קישורים כשעוברים עליהם בעכבר */
+nav ul li a:hover {
+    color: rgb(241, 71, 139);
+    /* צבע הטקסט שתרצה */
+}
+
+#main {
+    direction: rtl;
+}
+
+.displayNone {
+    display: none;
+}
+
+/* סגנון עבור ההודעה שתוצג בעת ריחוף */
+.hover-message {
+    display: none;
+    color: rgb(241, 71, 139);
+
+}
+
+.notConnect:hover .hover-message{
+    display: block;
+}
+
+#wellcome {
+    color: rgb(241, 71, 139);
+    font-weight: bold;
+
+}
+
+
+/* סגנון רספונסיבי */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #search-container {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    #search-container input[type="text"] {
+        width: 100%;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

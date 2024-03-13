@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/recipesBook.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>ספר המתכונים</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../שחור.png" alt="לוגו האתר">
+        </div>
+        <div id="search-container">
+            <input type="text" placeholder="חפש מתכון/יוצר" id="search-input">
+            <button id="search-button"><i class='fas fa-search'></i></button>
+        </div>
+        <nav>
+            <ul>
+                <h2 id="wellcome"></h2><br>
+                <li><a href="#" id="logout" onclick="logout()">התנתקות</a></li>
+                <li><a href="./homePage.html">דף ראשי</a></li>
+                <li><a href="./recipesBook.html" style="color: rgb(241, 71, 139);">מחברת מתכונים</a></li>
+                <li><a href="./setProfile.html">עריכת פרופיל</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="tab-container">
+            <button id="myRecipesTab" disabled onclick="myRecipes()">המתכונים שלי</button>
+            <button id="favoriteRecipesTab" onclick="othersRecipes()">מתכונים שאהבתי</button>
+        </div>
+        <div id="myRecipes-container"></div>
+        <button id="addRecipe" onclick="window.location.href ='./addRecipe.html';">הוסף מתכון</button>
+    </main>
+    <script src="../javaScript/recipesBook.js"></script>
+    <script src="../javaScript/logout.js"></script>
+    <script src="../javaScript/addRecipe.js"></script>
+    <script src="../javaScript/showRecipes.js"></script>
+    <script src="../javaScript/search.js"></script>
+    <script src="../javaScript/updateRecipe.js"></script>
+</body>
+
+</html>

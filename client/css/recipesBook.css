@@ -1,0 +1,80 @@
+/* סגנון כותרות ראשיות */
+h1 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+/* סגנון לטופס הוספת מתכון */
+
+#addRecipe, #myRecipesTab, #favoriteRecipesTab {
+  margin-top: 20px;
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addRecipe:hover, #myRecipesTab:hover, #favoriteRecipesTab:hover {
+  background-color: #555;
+}
+
+#recipeForm label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#recipeForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#recipeForm button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#recipeForm button[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+#myRecipes-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* סגנון של התמונה בדיב המתכון */
+#myRecipes-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* סגנון של התיאור בדיב המתכון */
+#myRecipes-container p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+#myRecipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  align-items: center; /* מרכז את התוכן לרוחב באמצע האב */
+}

@@ -1,0 +1,46 @@
+/* סגנון הכותרת בכל סקשן של ההרשמה */
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* סגנון הטופס בכל סקשן של ההרשמה */
+.form-container form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* סגנון תוויות השדות */
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* סגנון השדות */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* סגנון כפתור ההרשמה */
+.form-container button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #555;
+}
+

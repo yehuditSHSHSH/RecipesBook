@@ -1,0 +1,134 @@
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* סגנון של הכותרת בדיב המתכון */
+#recipes-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    top: 0px;
+}
+
+/* סגנון של התמונה בדיב המתכון */
+#recipes-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* סגנון של התיאור בדיב המתכון */
+#recipes-container p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+#recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    align-items: center; /* מרכז את התוכן לרוחב באמצע האב */
+}
+
+.image-with-caption {
+    position: relative;
+    display: inline-block;
+    max-width: 8cm; /* הוספנו כדי לקבוע מקסימום רוחב */
+}
+
+.recipes_imgs {
+    width: 100%;
+    height: auto;
+}
+
+.image-caption {
+    position: absolute;
+    top: 5px; /* משימים את הפיקוד על אמצע התמונה */
+    left: 5px; /* משימים את הפיקוד על אמצע התמונה */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: large;
+}
+
+
+.image-likes {
+    position: absolute;
+    top: 5px; /* הוספנו כדי לקבוע מיקום בחלק העליון של התמונה */
+    right: 5px; /* הוספנו כדי לקבוע מיקום בצד הימני של התמונה */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: small;
+}
+
+/* הוספת Flexbox על מנת ליישר את התוכן לאמצע האב */
+#recipes-container p {
+    display: flex;
+    justify-content: right;
+    direction: rtl;
+}
+.image-likes i.fas:hover {
+    color: red;
+}
+
+#recipes-container > div {
+    width: 300px; /* רוחב */
+    height: 400px; /* אורך */
+    border: 1px solid #ccc; /* גבול */
+    border-radius: 2%;
+    text-align: right; /* יישור טקסט מימין לשמאל */
+    direction: rtl; /* הצגת טקסט מימין לשמאל */
+    display: flex; /* Flexbox כדי ליישר תוכן לאמצע */
+    flex-direction: column; /* תצוגת עמוד עם יישור מימין לשמאל */
+    align-items: center; /* מרכז רוחב */
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+    text-align: right;
+}
+
+.icon-container {
+    position: relative;
+}
+
+.icon-element {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.creator {
+    color: #555;
+}
+ p{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+ }
+
+ .image-likes .hover-message {
+    display: none;
+    width: 170px;
+    color: white;
+}
+
+.image-likes:hover .hover-message{
+    display: block;
+}

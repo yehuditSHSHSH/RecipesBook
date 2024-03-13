@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/recipesDetails.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+    <title>פרטי מתכון</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../שחור.png" alt="לוגו האתר">
+        </div>
+        <div id="search-container">
+            <input type="text" placeholder="חפש מתכון/יוצר" id="search-input">
+            <button id="search-button"><i class='fas fa-search'></i></button>
+        </div>
+        <nav>
+            <ul>
+                <h2 id="wellcome" class="displayNone"></h2><br>
+                <li><a href="./login.html" id="login"> התחברות /</a><a href="./register.html" id="register">הרשמה </a>
+                    <a href="#" id="logout" onclick="logout()" class="displayNone">התנתקות</a></li>
+                <li><a href="./homePage.html">דף ראשי</a></li>
+                <li class="notConnect" id="recipesBookContainer">
+                    <a href="#" id="recipesBook" >מחברת מתכונים</a>
+                    <div class="hover-message">יש להתחבר כדי לצפות ולנהל את מחברת המתכונים שלך</div>
+                </li>
+                <li><a href="./setProfile.html" id="setProfile" class="displayNone">עריכת פרופיל</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="recipe-details"></div>
+    </main>
+    <script src="../javaScript/isConnect.js"></script>
+    <script src="../javaScript/logout.js"></script>
+    <script src="../javaScript/recipeDetails.js"></script>
+    <script src="../javaScript/search.js"></script>
+    <script src="../javaScript/showRecipes.js"></script>
+</body>
+
+</html>

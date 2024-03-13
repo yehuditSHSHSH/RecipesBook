@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/recipes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>מתכונים שלי</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../שחור.png" alt="לוגו האתר">
+        </div>
+        <div id="search-container">
+            <input type="text" placeholder="חפש מתכון/יוצר" id="search-input">
+            <button id="search-button"><i class='fas fa-search'></i></button>
+        </div>
+        <nav>
+            <ul>
+                <h2 id="wellcome" class="displayNone"></h2><br>
+                <li><a href="./login.html" id="login"> התחברות /</a><a href="./register.html" id="register">הרשמה </a>
+                    <a href="#" id="logout" onclick="logout()" class="displayNone">התנתקות</a></li>
+                <li><a href="./homePage.html" style="color: rgb(241, 71, 139);">דף ראשי</a></li>
+                <li class="notConnect" id="recipesBookContainer">
+                    <a href="#" id="recipesBook" >מחברת מתכונים</a>
+                    <div class="hover-message">יש להתחבר כדי לצפות ולנהל את מחברת המתכונים שלך</div>
+                </li>
+                <li><a href="./setProfile.html" id="setProfile" class="displayNone">עריכת פרופיל</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="category">
+            <h2><i class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i> לחמים <i
+                    class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i></h2>
+
+            <img src="../תמונות/Grissini.jpg" alt="תמונת לחמים " id="לחמים">
+
+        </section>
+
+        <section class="category">
+            <h2> <i class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i> סלטים <i
+                    class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i></h2>
+
+            <img src="../תמונות/סלטים.png" alt=" סלטים" id="סלטים">
+
+        </section>
+        <section class="category">
+            <h2><i class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i> מנות עקריות <i
+                    class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i></h2>
+
+            <img src="../תמונות/בשר.jpg" alt="תמונת מנות עקריות" id="מנות עקריות">
+
+        </section>
+
+        <section class="category">
+            <h2><i class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i> תוספות <i
+                    class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i> </h2>
+            <img src="../תמונות/תוספות.jpg" alt=" תמונת תוספות" id="תוספות">
+        </section>
+
+        </section>
+        <section class="category">
+            <h2><i class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i> עוגות ועוגיות <i
+                    class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i></h2>
+            <img src="../תמונות/עוגיות.jpg" alt="תמונת עוגות ועוגיות" id="עוגות ועוגיות" >
+        </section>
+
+        <section class="category">
+            <h2><i class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i> קינוחים ומתוקים <i
+                    class="fas fa-heart" style="color: rgb(241, 71, 139); font-size: 14px;"></i></h2>
+
+            <img src="../תמונות/מתוקים.jpg" alt=" תמונת קינוחים ומתוקים" id="קינוחים ומתוקים">
+
+        </section>
+
+    </main>
+
+    <script src="../javaScript/isConnect.js"></script>
+    <script src="../javaScript/logout.js"></script>
+    <script src="../javaScript/homePage.js"></script>
+    <script src="../javaScript/search.js"></script>
+    <script src="../javaScript/showRecipes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/* Reset סגנון ברירת מחדל */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* סגנון של כל הדף */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* סגנון של הכותרת */
+header {
+    background-color: rgb(241, 71, 139);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-logo img {
+    max-width: 100%;
+}
+
+/* סגנון של תיבת החיפוש */
+#search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-container input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-container button {
+    padding: 10px 15px;
+    background-color: rgb(241, 71, 139);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* סגנון של הקטגוריות */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.category {
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category h2 {
+    font-size: 24px;
+    color: rgb(241, 71, 139);
+    margin-bottom: 10px;
+}
+
+.category img {
+    max-width: 100%;
+    max-height: 100%; /* הוסף את השורה הזו */
+    object-fit: cover; /* הוסף את השורה הזו */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* סגנון של הכותרת ברגלית */
+footer {
+    text-align: center;
+    background-color: rgb(241, 71, 139);
+    color: white;
+    padding: 10px;
+}
